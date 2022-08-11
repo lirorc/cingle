@@ -1,0 +1,14 @@
+#!/bin/sh
+
+if test -e circleofmoon
+then
+  ./circleofmoon|aplay
+else
+  if test -e circleofmoon.c
+  then
+    cc -o circleofmoon circleofmoon.c
+    ./circleofmoon|aplay
+  else
+    echo file not found
+  fi
+fi
