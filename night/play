@@ -1,0 +1,14 @@
+#!/bin/sh
+
+if test -e symphonyofnight
+then
+  ./symphonyofnight|aplay
+else
+  if test -e symphonyofnight.c
+  then
+    cc -o symphonyofnight symphonyofnight.c
+    ./symphonyofnight|aplay
+  else
+    echo file not found
+  fi
+fi

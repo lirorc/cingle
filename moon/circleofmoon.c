@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+extern int putchar (int __c);
 
 // see etude in c minor
 int main()

@@ -1,1 +1,1 @@
-simple jingles in C
+cimple cingles in c
